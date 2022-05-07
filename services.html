@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>One Hand Clapping | Services</title>
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link href="style.css" rel='stylesheet'>
+  <script src="script.js"></script>
+</head>
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+<h1 style="color:red;text-align:center;">One Hand Clapping</h1>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="work.html">Work</a>
+    <a href="project.html">Project</a>
+    <a href="services.html" style="color:green;">Services</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+<h1 style="text-align:left;"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> One Hand Clapping</h1>
+<img src="logo.jpg" style="width:100%;height:250px;"></img>
+<h2>Services</h2>  
+<p>One Hand Clapping provided multiple types of services to all of our clients. We are hard work people that create amazing works. </p>   
+<button type="button" class="collapsible">IP Development <i class='bx bx-chevron-down'></i></button>
+<div class="content">
+  <p>We provided IP Development services to all of our clients. We help many of our clients to identify and perfect intellectual property rights.<br><br>IP Development is intellectual property development and management program that enables a company to identify and perfect the intellectual property rights it possesses, to continue to develop and expand such rights as the opportunities come along, and to leverage such rights to their fullest potential.</p>
+</div>
+<button type="button" class="collapsible">Worldbuilding <i class='bx bx-chevron-down'></i></button>
+<div class="content">
+  <p>We also specialise in Worldbuilding too. We constructed multiple imaginary world like in PJ Masks and Yellowbird movie for our clients.<br><br>Worldbuilding is the process of constructing an imaginary world, sometimes associated with a fictional universe. Developing an imaginary setting with coherent qualities such as a history, geography, and ecology is a key task for many science fiction or fantasy writers.</p>
+</div>
+<button type="button" class="collapsible">Show Bibles <i class='bx bx-chevron-down'></i></button>
+<div class="content">
+  <p>Not only that, we also provided show bibles to our clients too. We created multiple bibles to our clients.<br><br>A TV show bible, or series bible, is essentially an outline of your show, or series. Show bibles are generally broken down into several parts, including: a one page pitch of your show and logline, story engine, character breakdowns, pilot and future seasons.</p>
+</div>
+<button type="button" class="collapsible">Series Pilots <i class='bx bx-chevron-down'></i></button>
+<div class="content">
+  <p>We also create series pilots too. We created multiple series pilot to our clients like Disney in PJ Masks. A television pilot (also known as a pilot or a pilot episode and sometimes marketed as a tele-movie) is a standalone episode of a television series that is used to sell the show to a television network.</p>
+</div>
+<button type="button" class="collapsible">Series Script Editing <i class='bx bx-chevron-down'></i></button>
+<div class="content">
+  <p>We also provided series script editing services too. We edited many series script like PJ Masks. We write and create many series episodes to many clients around the world.</p>
+</div>
+<button type="button" class="collapsible">Writing Services <i class='bx bx-chevron-down'></i></button>
+<div class="content">
+  <p>We also provided writing services too. We writes multiple types of stories for all of our clients. We writes episodes and movie scripts for many shows like Disney.</p>
+</div>
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>

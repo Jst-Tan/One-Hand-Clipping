@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>One Hand Clapping | About</title>
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+<link href="style.css" rel='stylesheet'>
+<script src="script.js"></script>
+</head>
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+<h1 style="color:red;text-align:center;">One Hand Clapping</h1>
+    <a href="index.html">Home</a>
+    <a href="about.html" style="color:green;">About</a>
+    <a href="work.html">Work</a>
+    <a href="project.html">Project</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+<h1 style="text-align:left;"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> One Hand Clapping</h1>
+<img src="logo.jpg" style="width:100%;height:250px;"></img>
+<h2>About Us</h2>
+<h3>One Hand Clapping is a creative boutique founded by Paul McKeown and Christian DeVita. Paul and Christian bring decades of experience working with leading international talent in animation. Some of their most recent work includes internationally recognized projects including Disney's PJ Masks, Mighty Mike for Cartoon Network and Angry Birds Summer Madness (coming to Netflix in 2022).<br><br>One Hand Clapping works with broadcasters, distribution and production companies to develop high quality IPs for the international market. They specialize in creative development, consulting and writing for projects at various stages of development.<br><br>One Hand Clapping's clients include Netflix, Disney EMEA, CN, Nickelodeon, Teletoon, Super RTL, ABC Australia, Canal + and France Televisions. They have created, developed, directed, script edited and sold IPs globally.</h3>
+
+<button type="button" class="collapsible">Christian De Vita <i class='bx bx-chevron-down'></i></button>
+<div class="content">
+  <p>Christian De Vita is a storyboard artist and director. He is the director of the animated preschool television series PJ Masks and is known for his work on Grand Budapest Hotel (2014), Frankenweenie (2012) and Fantastic Mr. Fox (2009).</p>
+</div>
+<button type="button" class="collapsible">Paul McKeown <i class='bx bx-chevron-down'></i></button>
+<div class="content">
+  <p>Paul McKeown is multi disciplined media industry professional with extensive experience specializing in IP development, direction, script editing, writing and digital comedy. Paul McKeown is a comedy writer clients include Tiger Aspect, Objective Productions, Nivea and Funny or Die, as well as scripted animated comedy for Disney and programs that have aired on Nickelodeon and Nick Jnr.</p>
+</div>
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>

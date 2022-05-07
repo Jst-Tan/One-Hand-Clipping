@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>One Hand Clapping | Contact</title>
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+<link href="style.css" rel='stylesheet'>
+<script src="script.js"></script>
+</head>
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+<h1 style="color:red;text-align:center;">One Hand Clapping</h1>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="work.html">Work</a>
+    <a href="project.html">Project</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html" style="color:green;">Contact</a>
+  </div>
+</div>
+
+<h1 style="text-align:left;"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> One Hand Clapping</h1>
+<img src="logo.jpg" style="width:100%;height:250px;"></img>
+<h2>Contact</h2>
+<p>If you are interested in our services and would like to contacting us, you could contact Christian De Vita and Paul McKeown, the founder of One Hand Clipping directly. You could contact them with their contact details below. </p>
+<button type="button" class="collapsible">Christian De Vita <i class='bx bx-chevron-down'></i></button>
+<div class="content">
+  <p><ul><li>Location: London</li><li><a href="mailto:Christian@onehandclapping.tv">Email Me</a> (Christian@onehandclapping.tv)</li><li><a href="tel:+447832111085 ">Call Me</a> (044  (0)7832111085)</li></ul></p>
+</div>
+<button type="button" class="collapsible">Paul McKeown <i class='bx bx-chevron-down'></i></button>
+<div class="content">
+  <p><ul><li>Location: Los Angeles</li><li><a href="mailto:Paul@onehandclapping.tv">Email Me</a> (Paul@onehandclapping.tv)</li><li><a href="tel:+13103212709">Call Me</a> (+13103212709)</li></ul></p>
+</div>
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>

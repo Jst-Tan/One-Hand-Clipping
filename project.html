@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>One Hand Clapping | Project</title>
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+<link href="style.css" rel='stylesheet'>
+<script src="script.js"></script>
+</head>
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+<h1 style="color:red;text-align:center;">One Hand Clapping</h1>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="work.html">Work</a>
+    <a href="project.html" style="color:green;">Project</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+<h1 style="text-align:left;"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> One Hand Clapping</h1>
+<img src="logo.jpg" style="width:100%;height:250px;"></img>
+<h2>Project</h2>
+<p>One Hand Clipping currently working hard on some project that still under development by the team. We develop many amazing shows and movies as projects. Check out all of our projects listed below. </p>
+<button type="button" class="collapsible"><h3>Cheese Toastie Brain Monster <i class='bx bx-chevron-down'></i></h3></button>
+<div class="content">
+  <img src="img7.jpeg" style="width:100px;height:100px;">
+  <p>52 x 11 minutes</p>
+  <p>An evil Professor dedicated his life to creating a monster so deliciously evil it would be remembered alongside the likes of Dracula and Frankenstein. But an untimely accident meant that instead of an evil Brain he was intending his creation got a slice of cheese on toast for a brain instead. The result is Cheese Toastie Brian monster, a naive and lovable monster who is about as scary as a fistful of bunnies. Now with the help of his best friend the evil obsessed Marjorie and G his experimental Guinea Pig Toastie embarks on a mission to learn how to fulfill his evil destiny.</p>
+</div>
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>     
+</body>
+</html>
